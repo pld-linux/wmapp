@@ -18,7 +18,7 @@ are tired of trying to work with the code in wmgeneral.c, this library is
 for you!
 
 %description -l pl
-WMApp, jest graficzn± bibliotek± napisan± wy³±cznie dla celów rozwijania
+WMApp jest graficzn± bibliotek± napisan± wy³±cznie dla celów rozwijania
 dokowalnych aplikacji Window Makera. Je¶li lubisz takie aplikacje a tak¿e
 C++ i jeste¶ zmêczony prac± z kodem wmgeneral.c, ta biblioteka jest
 w³a¶nie dla Ciebie!
