@@ -37,33 +37,31 @@ Pliki nag³ówkowe, które s± potrzebne tylko dla programistów uzywaj±ch
 biblioteki WMApp.
 
 %package static
-Summary:	Header files for WMApp
-Summary(pl):	Pliki nag³ówkowe dla WMApp
+Summary:	Static version of WMApp library
+Summary(pl):	Wersja statyczna WMApp
 Group:          Development/Libraries
 Requires:       %{name}-devel = %{version}
 
 %description static
-The header files are only needed for development of programs using the
-WMApp library.
+Static version of WMApp library.
 
 %description static -l pl
-Pliki nag³ówkowe, które s± potrzebne tylko dla programistów uzywaj±ch
-biblioteki WMApp.
+Wersja statyczna WMApp.
 
 %prep
 %setup -q
 
 %build
 %{__make} CFLAGS="%{rpmcflags}"
-gcc -shared libwmapp.a -o libwmapp.so.1
+gcc -shared *.o -o libwmapp.so.1
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_includedir}/wmapp,%{_libdir},%{_examplesdir}/%{name}-%{version}/example{1,2}}
+install -d $RPM_BUILD_ROOT{%{_includedir}/%{name},%{_libdir},%{_examplesdir}/%{name}-%{version}/example{1,2}}
 install libwmapp* $RPM_BUILD_ROOT%{_libdir}
-install *.h $RPM_BUILD_ROOT%{_includedir}/wmapp
-install xpm/*.xpm $RPM_BUILD_ROOT%{_includedir}/wmapp
+install *.h $RPM_BUILD_ROOT%{_includedir}/%{name}
+install xpm/*.xpm $RPM_BUILD_ROOT%{_includedir}/%{name}
 ln -s libwmapp.so.1 $RPM_BUILD_ROOT%{_libdir}/libwmapp.so
 
 install example1/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/example1
@@ -83,8 +81,8 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so
-%dir %{_includedir}/wmapp
-%{_includedir}/wmapp/*
+%dir %{_includedir}/%{name}
+%{_includedir}/%{name}/*
 %dir %{_examplesdir}/%{name}-%{version}/example1
 %dir %{_examplesdir}/%{name}-%{version}/example2
 %{_examplesdir}/%{name}-%{version}/example1/*
