@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://savannah.nongnu.org/download/fetchmailmon/stable.pkg/0.3/%{name}-%{version}.tar.gz
+# Source0-md5:	4bf473fdcacce60a3e1d5fbe945e9e9d
 URL:		http://www.princeton.edu/~kmccarty/wmapp.html
 BuildRequires:	libstdc++-devel
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
