@@ -10,7 +10,7 @@ Source0:	http://savannah.nongnu.org/download/fetchmailmon/stable.pkg/0.3/%{name}
 URL:		http://www.princeton.edu/~kmccarty/wmapp.html
 BuildRequires:	XFree86-devel
 BuildRequires:	libstdc++-devel
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is WMApp, a C++ graphics library written exclusively for
@@ -27,8 +27,8 @@ biblioteka jest w³a¶nie dla Ciebie!
 %package devel
 Summary:	Header files for WMApp
 Summary(pl):	Pliki nag³ówkowe dla WMApp
-Group:          Development/Libraries
-Requires:       %{name} = %{version}
+Group:		Development/Libraries
+Requires:	%{name} = %{version}
 Requires:	XFree86-devel
 Requires:	libstdc++-devel
 
@@ -43,8 +43,8 @@ biblioteki WMApp.
 %package static
 Summary:	Static version of WMApp library
 Summary(pl):	Statyczna wersja biblioteki WMApp
-Group:          Development/Libraries
-Requires:       %{name}-devel = %{version}
+Group:		Development/Libraries
+Requires:	%{name}-devel = %{version}
 
 %description static
 Static version of WMApp library.
