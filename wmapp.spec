@@ -28,7 +28,7 @@ biblioteka jest w³a¶nie dla Ciebie!
 Summary:	Header files for WMApp
 Summary(pl):	Pliki nag³ówkowe dla WMApp
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	XFree86-devel
 Requires:	libstdc++-devel
 
@@ -44,7 +44,7 @@ biblioteki WMApp.
 Summary:	Static version of WMApp library
 Summary(pl):	Statyczna wersja biblioteki WMApp
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of WMApp library.
