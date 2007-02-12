@@ -1,5 +1,5 @@
 Summary:	WMApp graphics library
-Summary(pl):	WMApp - biblioteka graficzna
+Summary(pl.UTF-8):   WMApp - biblioteka graficzna
 Name:		wmapp
 Version:	0.0.4.2
 Release:	1
@@ -18,15 +18,15 @@ developing WindowMaker dockapps. If you like dockapps, but you also
 like C++ and you are tired of trying to work with the code in
 wmgeneral.c, this library is for you!
 
-%description -l pl
-WMApp jest graficzn± bibliotek± napisan± wy³±cznie dla celów
-rozwijania dokowalnych aplikacji Window Makera. Je¶li lubisz takie
-aplikacje a tak¿e C++ i jeste¶ zmêczony prac± z kodem wmgeneral.c, ta
-biblioteka jest w³a¶nie dla Ciebie!
+%description -l pl.UTF-8
+WMApp jest graficznÄ… bibliotekÄ… napisanÄ… wyÅ‚Ä…cznie dla celÃ³w
+rozwijania dokowalnych aplikacji Window Makera. JeÅ›li lubisz takie
+aplikacje a takÅ¼e C++ i jesteÅ› zmÄ™czony pracÄ… z kodem wmgeneral.c, ta
+biblioteka jest wÅ‚aÅ›nie dla Ciebie!
 
 %package devel
 Summary:	Header files for WMApp
-Summary(pl):	Pliki nag³ówkowe dla WMApp
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe dla WMApp
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	XFree86-devel
@@ -36,20 +36,20 @@ Requires:	libstdc++-devel
 The header files are only needed for development of programs using the
 WMApp library.
 
-%description devel -l pl
-Pliki nag³ówkowe, które s± potrzebne tylko dla programistów u¿ywaj±ch
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe, ktÃ³re sÄ… potrzebne tylko dla programistÃ³w uÅ¼ywajÄ…ch
 biblioteki WMApp.
 
 %package static
 Summary:	Static version of WMApp library
-Summary(pl):	Statyczna wersja biblioteki WMApp
+Summary(pl.UTF-8):   Statyczna wersja biblioteki WMApp
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of WMApp library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja biblioteki WMApp.
 
 %prep
