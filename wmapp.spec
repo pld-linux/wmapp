@@ -1,5 +1,5 @@
 Summary:	WMApp graphics library
-Summary(pl.UTF-8):   WMApp - biblioteka graficzna
+Summary(pl.UTF-8):	WMApp - biblioteka graficzna
 Name:		wmapp
 Version:	0.0.4.2
 Release:	1
@@ -26,7 +26,7 @@ biblioteka jest właśnie dla Ciebie!
 
 %package devel
 Summary:	Header files for WMApp
-Summary(pl.UTF-8):   Pliki nagłówkowe dla WMApp
+Summary(pl.UTF-8):	Pliki nagłówkowe dla WMApp
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	XFree86-devel
@@ -42,7 +42,7 @@ biblioteki WMApp.
 
 %package static
 Summary:	Static version of WMApp library
-Summary(pl.UTF-8):   Statyczna wersja biblioteki WMApp
+Summary(pl.UTF-8):	Statyczna wersja biblioteki WMApp
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
